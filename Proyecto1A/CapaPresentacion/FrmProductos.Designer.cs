@@ -28,9 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProductos));
             this.label1 = new System.Windows.Forms.Label();
-            this.dgnProductos = new System.Windows.Forms.DataGridView();
+            this.dgvProductos = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Estado = new System.Windows.Forms.CheckBox();
             this.Descripcion = new System.Windows.Forms.TextBox();
@@ -49,36 +48,36 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgnProductos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(348, 39);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(224, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(298, 31);
+            this.label1.Size = new System.Drawing.Size(540, 54);
             this.label1.TabIndex = 0;
             this.label1.Text = "Control General Productos";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // dgnProductos
+            // dgvProductos
             // 
-            this.dgnProductos.BackgroundColor = System.Drawing.Color.White;
-            this.dgnProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgnProductos.Location = new System.Drawing.Point(158, 106);
-            this.dgnProductos.Name = "dgnProductos";
-            this.dgnProductos.RowHeadersWidth = 51;
-            this.dgnProductos.RowTemplate.Height = 24;
-            this.dgnProductos.Size = new System.Drawing.Size(665, 143);
-            this.dgnProductos.TabIndex = 1;
-            this.dgnProductos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgnProductos_CellClick);
-            this.dgnProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgnProductos_CellContentClick);
+            this.dgvProductos.BackgroundColor = System.Drawing.Color.White;
+            this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProductos.Location = new System.Drawing.Point(93, 73);
+            this.dgvProductos.Name = "dgvProductos";
+            this.dgvProductos.RowHeadersWidth = 51;
+            this.dgvProductos.RowTemplate.Height = 24;
+            this.dgvProductos.Size = new System.Drawing.Size(775, 269);
+            this.dgvProductos.TabIndex = 1;
+            this.dgvProductos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgnProductos_CellClick);
+            this.dgvProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgnProductos_CellContentClick);
             // 
             // groupBox1
             // 
-            this.groupBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox1.BackgroundImage")));
             this.groupBox1.Controls.Add(this.Estado);
             this.groupBox1.Controls.Add(this.Descripcion);
             this.groupBox1.Controls.Add(this.Nombre);
@@ -91,7 +90,7 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(98, 288);
+            this.groupBox1.Location = new System.Drawing.Point(12, 348);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(605, 320);
             this.groupBox1.TabIndex = 2;
@@ -212,11 +211,11 @@
             // 
             this.btnNuevo.BackColor = System.Drawing.Color.Wheat;
             this.btnNuevo.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Location = new System.Drawing.Point(742, 288);
+            this.btnNuevo.Location = new System.Drawing.Point(638, 365);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(157, 34);
+            this.btnNuevo.Size = new System.Drawing.Size(174, 39);
             this.btnNuevo.TabIndex = 3;
-            this.btnNuevo.Text = "AgregarProducto";
+            this.btnNuevo.Text = "Agregar Producto";
             this.btnNuevo.UseVisualStyleBackColor = false;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
@@ -224,7 +223,7 @@
             // 
             this.btnModificar.BackColor = System.Drawing.Color.Wheat;
             this.btnModificar.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(742, 357);
+            this.btnModificar.Location = new System.Drawing.Point(638, 426);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(157, 34);
             this.btnModificar.TabIndex = 4;
@@ -236,7 +235,7 @@
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.Wheat;
             this.btnEliminar.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(742, 433);
+            this.btnEliminar.Location = new System.Drawing.Point(638, 493);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(157, 34);
             this.btnEliminar.TabIndex = 5;
@@ -248,7 +247,7 @@
             // 
             this.btnLimpiar.BackColor = System.Drawing.Color.Wheat;
             this.btnLimpiar.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(742, 507);
+            this.btnLimpiar.Location = new System.Drawing.Point(638, 557);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(157, 34);
             this.btnLimpiar.TabIndex = 6;
@@ -260,7 +259,7 @@
             // 
             this.btnVolver.BackColor = System.Drawing.Color.Wheat;
             this.btnVolver.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.Location = new System.Drawing.Point(742, 574);
+            this.btnVolver.Location = new System.Drawing.Point(638, 619);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(157, 34);
             this.btnVolver.TabIndex = 7;
@@ -272,7 +271,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Peru;
+            this.BackColor = System.Drawing.Color.Olive;
             this.ClientSize = new System.Drawing.Size(931, 680);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnLimpiar);
@@ -280,7 +279,7 @@
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.dgnProductos);
+            this.Controls.Add(this.dgvProductos);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -288,7 +287,7 @@
             this.Name = "FrmProductos";
             this.Text = "Formuluario de productos";
             this.Load += new System.EventHandler(this.FrmProductos_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgnProductos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -299,7 +298,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dgnProductos;
+        private System.Windows.Forms.DataGridView dgvProductos;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;

@@ -85,8 +85,8 @@ namespace Proyecto1A.CapaPresentacion
         //asignar la lista como DataSOurce al datagridview
         private void RefrescarGrid()
         {
-            dgnProductos.DataSource = null; // Limpiar el DataSource antes de reasignarlo
-            dgnProductos.DataSource = listaProductos; // Asignar la lista como DataSource
+            dgvProductos.DataSource = null; // Limpiar el DataSource antes de reasignarlo
+            dgvProductos.DataSource = listaProductos; // Asignar la lista como DataSource
         }
 
         private void dgnProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -157,14 +157,14 @@ namespace Proyecto1A.CapaPresentacion
 
         private void dgnProductos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dgnProductos.CurrentRow == null) return;
+            if (dgvProductos.CurrentRow == null) return;
             //Obtener el producto seleccionado
-            id.Text = dgnProductos.CurrentRow.Cells["Id"].Value.ToString();
-            Nombre.Text = dgnProductos.CurrentRow.Cells["Nombre"].Value.ToString();
-            Descripcion.Text = dgnProductos.CurrentRow.Cells["Descripcion"].Value.ToString();
-            Precio.Text = dgnProductos.CurrentRow.Cells["Precio"].Value.ToString();
-            Stock.Text = dgnProductos.CurrentRow.Cells["Stock"].Value.ToString();
-            Estado.Checked = (bool)dgnProductos.CurrentRow.Cells["Estado"].Value;
+            id.Text = dgvProductos.CurrentRow.Cells["Id"].Value.ToString();
+            Nombre.Text = dgvProductos.CurrentRow.Cells["Nombre"].Value.ToString();
+            Descripcion.Text = dgvProductos.CurrentRow.Cells["Descripcion"].Value.ToString();
+            Precio.Text = dgvProductos.CurrentRow.Cells["Precio"].Value.ToString();
+            Stock.Text = dgvProductos.CurrentRow.Cells["Stock"].Value.ToString();
+            Estado.Checked = (bool)dgvProductos.CurrentRow.Cells["Estado"].Value;
 
             HabilitarBotones();
         }
@@ -257,6 +257,11 @@ namespace Proyecto1A.CapaPresentacion
         private void btnVolver_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

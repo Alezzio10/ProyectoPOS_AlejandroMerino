@@ -41,6 +41,7 @@
             // 
             // dgvCategoria
             // 
+            this.dgvCategoria.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvCategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCategoria.Location = new System.Drawing.Point(69, 124);
             this.dgvCategoria.Name = "dgvCategoria";
@@ -55,9 +56,9 @@
             // btnNuevo
             // 
             this.btnNuevo.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Location = new System.Drawing.Point(59, 381);
+            this.btnNuevo.Location = new System.Drawing.Point(247, 381);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(91, 44);
+            this.btnNuevo.Size = new System.Drawing.Size(107, 44);
             this.btnNuevo.TabIndex = 14;
             this.btnNuevo.Text = "Agregar";
             this.btnNuevo.UseVisualStyleBackColor = true;
@@ -66,9 +67,9 @@
             // btnEditar
             // 
             this.btnEditar.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.Location = new System.Drawing.Point(257, 381);
+            this.btnEditar.Location = new System.Drawing.Point(407, 381);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(128, 44);
+            this.btnEditar.Size = new System.Drawing.Size(136, 44);
             this.btnEditar.TabIndex = 15;
             this.btnEditar.Text = "Modificar";
             this.btnEditar.UseVisualStyleBackColor = true;
@@ -78,9 +79,9 @@
             // 
             this.btnEliminar.Enabled = false;
             this.btnEliminar.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(492, 381);
+            this.btnEliminar.Location = new System.Drawing.Point(608, 381);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(91, 44);
+            this.btnEliminar.Size = new System.Drawing.Size(106, 44);
             this.btnEliminar.TabIndex = 16;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -108,9 +109,9 @@
             // btnCerrar
             // 
             this.btnCerrar.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrar.Location = new System.Drawing.Point(681, 381);
+            this.btnCerrar.Location = new System.Drawing.Point(751, 435);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(98, 44);
+            this.btnCerrar.Size = new System.Drawing.Size(116, 44);
             this.btnCerrar.TabIndex = 19;
             this.btnCerrar.Text = "Cancelar";
             this.btnCerrar.UseVisualStyleBackColor = true;
@@ -131,7 +132,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Brown;
+            this.BackColor = System.Drawing.Color.Goldenrod;
             this.ClientSize = new System.Drawing.Size(869, 482);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCerrar);

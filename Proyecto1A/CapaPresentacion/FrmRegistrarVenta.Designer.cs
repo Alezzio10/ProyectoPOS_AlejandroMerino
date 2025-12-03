@@ -101,7 +101,7 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.BackColor = System.Drawing.Color.Aquamarine;
+            this.btnBuscar.BackColor = System.Drawing.Color.DarkCyan;
             this.btnBuscar.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.Location = new System.Drawing.Point(333, 48);
             this.btnBuscar.Name = "btnBuscar";
@@ -143,9 +143,9 @@
             this.lblTotal.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.Location = new System.Drawing.Point(200, 627);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(191, 28);
+            this.lblTotal.Size = new System.Drawing.Size(115, 28);
             this.lblTotal.TabIndex = 3;
-            this.lblTotal.Text = "Total A Pagar: $0.00";
+            this.lblTotal.Text = "Total: $0.00";
             // 
             // groupBox2
             // 
@@ -163,7 +163,7 @@
             // 
             // btnLimpiarDetalle
             // 
-            this.btnLimpiarDetalle.BackColor = System.Drawing.Color.Yellow;
+            this.btnLimpiarDetalle.BackColor = System.Drawing.Color.Firebrick;
             this.btnLimpiarDetalle.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiarDetalle.Location = new System.Drawing.Point(557, 215);
             this.btnLimpiarDetalle.Name = "btnLimpiarDetalle";
@@ -175,7 +175,7 @@
             // 
             // btnQuitar
             // 
-            this.btnQuitar.BackColor = System.Drawing.Color.NavajoWhite;
+            this.btnQuitar.BackColor = System.Drawing.Color.Firebrick;
             this.btnQuitar.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuitar.Location = new System.Drawing.Point(557, 96);
             this.btnQuitar.Name = "btnQuitar";
@@ -209,24 +209,26 @@
             // 
             // btnRegistraVenta
             // 
+            this.btnRegistraVenta.BackColor = System.Drawing.Color.Green;
             this.btnRegistraVenta.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistraVenta.Location = new System.Drawing.Point(579, 627);
             this.btnRegistraVenta.Name = "btnRegistraVenta";
             this.btnRegistraVenta.Size = new System.Drawing.Size(220, 40);
             this.btnRegistraVenta.TabIndex = 20;
             this.btnRegistraVenta.Text = "Registar Venta";
-            this.btnRegistraVenta.UseVisualStyleBackColor = true;
+            this.btnRegistraVenta.UseVisualStyleBackColor = false;
             this.btnRegistraVenta.Click += new System.EventHandler(this.btnRegistraVenta_Click);
             // 
             // btnCerrar
             // 
+            this.btnCerrar.BackColor = System.Drawing.Color.Firebrick;
             this.btnCerrar.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.Location = new System.Drawing.Point(842, 627);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(220, 40);
             this.btnCerrar.TabIndex = 21;
             this.btnCerrar.Text = "Cancelar";
-            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.UseVisualStyleBackColor = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // groupBox3
@@ -237,20 +239,22 @@
             this.groupBox3.Controls.Add(this.btnNuevoCliente);
             this.groupBox3.Controls.Add(this.cboCliente);
             this.groupBox3.Controls.Add(this.lblCliente);
-            this.groupBox3.Font = new System.Drawing.Font("Yu Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Font = new System.Drawing.Font("Yu Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(35, 82);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(1222, 95);
             this.groupBox3.TabIndex = 22;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Datos Generales ";
+            this.groupBox3.Text = "DATOS GENERALES";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // dtpFecha
             // 
-            this.dtpFecha.Location = new System.Drawing.Point(941, 41);
+            this.dtpFecha.Location = new System.Drawing.Point(952, 41);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(264, 36);
             this.dtpFecha.TabIndex = 23;
+            this.dtpFecha.ValueChanged += new System.EventHandler(this.dtpFecha_ValueChanged);
             // 
             // cboTipoPago
             // 
@@ -272,7 +276,7 @@
             // 
             // btnNuevoCliente
             // 
-            this.btnNuevoCliente.BackColor = System.Drawing.Color.Aquamarine;
+            this.btnNuevoCliente.BackColor = System.Drawing.Color.DarkCyan;
             this.btnNuevoCliente.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevoCliente.Location = new System.Drawing.Point(467, 32);
             this.btnNuevoCliente.Name = "btnNuevoCliente";
@@ -302,18 +306,18 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(497, 38);
+            this.label6.Font = new System.Drawing.Font("Segoe UI Black", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(468, 19);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(397, 30);
+            this.label6.Size = new System.Drawing.Size(364, 50);
             this.label6.TabIndex = 23;
-            this.label6.Text = "Formulario pos-Registro de venta:";
+            this.label6.Text = "Registro de Ventas";
             // 
             // FrmRegistrarVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FloralWhite;
+            this.BackColor = System.Drawing.Color.Orange;
             this.ClientSize = new System.Drawing.Size(1302, 679);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.groupBox3);

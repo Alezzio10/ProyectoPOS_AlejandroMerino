@@ -9,7 +9,7 @@ namespace Proyecto1A.CapaDatos
     public static class Conexion
     {
 
-        public static string Cadena = @"Data Source=DESKTOP-HMDGVGI\JERSONEXPRESS; Initial Catalog=POS_CAFETERIA;Integrated Security=True;";
+        public static string Cadena = @"Data Source=ALEJANDRODESK\SQLEXPRESS; Initial Catalog=POS_CAFETERIA;Integrated Security=True;";
 
     }
 }

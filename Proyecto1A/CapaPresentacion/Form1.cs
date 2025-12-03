@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Proyecto1A
 {
-    public partial class Sabor : Form
+    public partial class FrmMenuPrincipal : Form
     {
-        public Sabor()
+        public FrmMenuPrincipal()
         {
             InitializeComponent();
         }
@@ -35,7 +35,7 @@ namespace Proyecto1A
         {
 
             //creo una instancia del formulario frmProductos
-            FrmClientes frm = new FrmClientes();
+            FrmClientes2 frm = new FrmClientes2();
 
             frm.ShowDialog();
         }

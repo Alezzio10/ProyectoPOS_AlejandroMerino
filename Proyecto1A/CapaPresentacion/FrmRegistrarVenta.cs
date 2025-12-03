@@ -328,6 +328,16 @@ namespace Proyecto1A.CapaPresentacion
             }
 
         }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtpFecha_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
     }

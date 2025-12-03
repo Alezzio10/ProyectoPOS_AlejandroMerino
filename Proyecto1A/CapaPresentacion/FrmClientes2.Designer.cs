@@ -120,6 +120,7 @@
             // 
             // dgvClientes
             // 
+            this.dgvClientes.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvClientes.Location = new System.Drawing.Point(43, 154);
             this.dgvClientes.Name = "dgvClientes";
@@ -223,9 +224,9 @@
             // btnVolver
             // 
             this.btnVolver.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.Location = new System.Drawing.Point(517, 535);
+            this.btnVolver.Location = new System.Drawing.Point(785, 590);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(91, 44);
+            this.btnVolver.Size = new System.Drawing.Size(82, 44);
             this.btnVolver.TabIndex = 21;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = true;
@@ -235,7 +236,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Maroon;
+            this.BackColor = System.Drawing.Color.OrangeRed;
             this.ClientSize = new System.Drawing.Size(879, 646);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnEliminar);

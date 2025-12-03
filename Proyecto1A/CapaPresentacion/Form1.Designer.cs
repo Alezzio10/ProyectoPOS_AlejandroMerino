@@ -1,6 +1,6 @@
 ﻿namespace Proyecto1A
 {
-    partial class Sabor
+    partial class FrmMenuPrincipal
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sabor));
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenuPrincipal));
             this.panel1 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.btnCorteCaja = new System.Windows.Forms.Button();
@@ -55,6 +56,7 @@
             this.cierreDeCajaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1.SuspendLayout();
             this.menuSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -80,7 +82,7 @@
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.Location = new System.Drawing.Point(21, 498);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(215, 62);
+            this.button6.Size = new System.Drawing.Size(111, 44);
             this.button6.TabIndex = 5;
             this.button6.Text = "Salir";
             this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -89,7 +91,8 @@
             // btnCorteCaja
             // 
             this.btnCorteCaja.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCorteCaja.Image = ((System.Drawing.Image)(resources.GetObject("btnCorteCaja.Image")));
+            this.btnCorteCaja.ImageIndex = 4;
+            this.btnCorteCaja.ImageList = this.imageList1;
             this.btnCorteCaja.Location = new System.Drawing.Point(21, 403);
             this.btnCorteCaja.Name = "btnCorteCaja";
             this.btnCorteCaja.Size = new System.Drawing.Size(215, 64);
@@ -101,7 +104,8 @@
             // btnIventario
             // 
             this.btnIventario.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIventario.Image = ((System.Drawing.Image)(resources.GetObject("btnIventario.Image")));
+            this.btnIventario.ImageIndex = 3;
+            this.btnIventario.ImageList = this.imageList1;
             this.btnIventario.Location = new System.Drawing.Point(21, 312);
             this.btnIventario.Name = "btnIventario";
             this.btnIventario.Size = new System.Drawing.Size(215, 63);
@@ -113,7 +117,8 @@
             // btnClientes
             // 
             this.btnClientes.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClientes.Image = ((System.Drawing.Image)(resources.GetObject("btnClientes.Image")));
+            this.btnClientes.ImageIndex = 2;
+            this.btnClientes.ImageList = this.imageList1;
             this.btnClientes.Location = new System.Drawing.Point(21, 220);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(215, 63);
@@ -126,7 +131,8 @@
             // btnProductos
             // 
             this.btnProductos.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProductos.Image = ((System.Drawing.Image)(resources.GetObject("btnProductos.Image")));
+            this.btnProductos.ImageIndex = 1;
+            this.btnProductos.ImageList = this.imageList1;
             this.btnProductos.Location = new System.Drawing.Point(21, 123);
             this.btnProductos.Name = "btnProductos";
             this.btnProductos.Size = new System.Drawing.Size(215, 63);
@@ -139,7 +145,8 @@
             // btnVentasRapidas
             // 
             this.btnVentasRapidas.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVentasRapidas.Image = ((System.Drawing.Image)(resources.GetObject("btnVentasRapidas.Image")));
+            this.btnVentasRapidas.ImageIndex = 0;
+            this.btnVentasRapidas.ImageList = this.imageList1;
             this.btnVentasRapidas.Location = new System.Drawing.Point(21, 31);
             this.btnVentasRapidas.Name = "btnVentasRapidas";
             this.btnVentasRapidas.Size = new System.Drawing.Size(215, 63);
@@ -295,7 +302,17 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // Sabor
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "venta rapida2.png");
+            this.imageList1.Images.SetKeyName(1, "productos.png");
+            this.imageList1.Images.SetKeyName(2, "clientes2.png");
+            this.imageList1.Images.SetKeyName(3, "inventario.png");
+            this.imageList1.Images.SetKeyName(4, "corte de caja.png");
+            // 
+            // FrmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -306,7 +323,7 @@
             this.Controls.Add(this.menuSuperior);
             this.MainMenuStrip = this.menuSuperior;
             this.MaximizeBox = false;
-            this.Name = "Sabor";
+            this.Name = "FrmMenuPrincipal";
             this.Text = "El buen sabor";
             this.Load += new System.EventHandler(this.Sabor_Load);
             this.panel1.ResumeLayout(false);
@@ -346,6 +363,7 @@
         private System.Windows.Forms.ToolStripMenuItem verCategoriaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registroClientesToolStripMenuItem;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }
 
