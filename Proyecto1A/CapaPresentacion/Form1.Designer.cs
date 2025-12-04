@@ -31,8 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenuPrincipal));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.btnCorteCaja = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btnIventario = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
             this.btnProductos = new System.Windows.Forms.Button();
@@ -56,7 +57,10 @@
             this.cierreDeCajaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.btnUsuarios = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
+            this.cambiarClaveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.menuSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -65,7 +69,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Peru;
-            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.btnCerrar);
+            this.panel1.Controls.Add(this.btnUsuarios);
+            this.panel1.Controls.Add(this.btnSalir);
             this.panel1.Controls.Add(this.btnCorteCaja);
             this.panel1.Controls.Add(this.btnIventario);
             this.panel1.Controls.Add(this.btnClientes);
@@ -76,24 +82,24 @@
             this.panel1.Size = new System.Drawing.Size(255, 694);
             this.panel1.TabIndex = 0;
             // 
-            // button6
+            // btnSalir
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(21, 498);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(111, 44);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Salir";
-            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
+            this.btnSalir.Location = new System.Drawing.Point(3, 638);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(111, 44);
+            this.btnSalir.TabIndex = 5;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSalir.UseVisualStyleBackColor = true;
             // 
             // btnCorteCaja
             // 
             this.btnCorteCaja.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCorteCaja.ImageIndex = 4;
             this.btnCorteCaja.ImageList = this.imageList1;
-            this.btnCorteCaja.Location = new System.Drawing.Point(21, 403);
+            this.btnCorteCaja.Location = new System.Drawing.Point(12, 327);
             this.btnCorteCaja.Name = "btnCorteCaja";
             this.btnCorteCaja.Size = new System.Drawing.Size(215, 64);
             this.btnCorteCaja.TabIndex = 4;
@@ -101,12 +107,24 @@
             this.btnCorteCaja.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCorteCaja.UseVisualStyleBackColor = true;
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "venta rapida2.png");
+            this.imageList1.Images.SetKeyName(1, "productos.png");
+            this.imageList1.Images.SetKeyName(2, "clientes2.png");
+            this.imageList1.Images.SetKeyName(3, "inventario.png");
+            this.imageList1.Images.SetKeyName(4, "corte de caja.png");
+            this.imageList1.Images.SetKeyName(5, "usuarios.png");
+            this.imageList1.Images.SetKeyName(6, "cerrarsesion.png");
+            // 
             // btnIventario
             // 
             this.btnIventario.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIventario.ImageIndex = 3;
             this.btnIventario.ImageList = this.imageList1;
-            this.btnIventario.Location = new System.Drawing.Point(21, 312);
+            this.btnIventario.Location = new System.Drawing.Point(12, 249);
             this.btnIventario.Name = "btnIventario";
             this.btnIventario.Size = new System.Drawing.Size(215, 63);
             this.btnIventario.TabIndex = 3;
@@ -119,7 +137,7 @@
             this.btnClientes.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClientes.ImageIndex = 2;
             this.btnClientes.ImageList = this.imageList1;
-            this.btnClientes.Location = new System.Drawing.Point(21, 220);
+            this.btnClientes.Location = new System.Drawing.Point(12, 171);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(215, 63);
             this.btnClientes.TabIndex = 2;
@@ -133,7 +151,7 @@
             this.btnProductos.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProductos.ImageIndex = 1;
             this.btnProductos.ImageList = this.imageList1;
-            this.btnProductos.Location = new System.Drawing.Point(21, 123);
+            this.btnProductos.Location = new System.Drawing.Point(12, 88);
             this.btnProductos.Name = "btnProductos";
             this.btnProductos.Size = new System.Drawing.Size(215, 63);
             this.btnProductos.TabIndex = 1;
@@ -147,7 +165,7 @@
             this.btnVentasRapidas.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVentasRapidas.ImageIndex = 0;
             this.btnVentasRapidas.ImageList = this.imageList1;
-            this.btnVentasRapidas.Location = new System.Drawing.Point(21, 31);
+            this.btnVentasRapidas.Location = new System.Drawing.Point(12, 3);
             this.btnVentasRapidas.Name = "btnVentasRapidas";
             this.btnVentasRapidas.Size = new System.Drawing.Size(215, 63);
             this.btnVentasRapidas.TabIndex = 0;
@@ -163,7 +181,8 @@
             this.gestiónToolStripMenuItem,
             this.ventasToolStripMenuItem,
             this.reporteToolStripMenuItem,
-            this.salirToolStripMenuItem});
+            this.salirToolStripMenuItem,
+            this.cambiarClaveToolStripMenuItem});
             this.menuSuperior.Location = new System.Drawing.Point(0, 0);
             this.menuSuperior.Name = "menuSuperior";
             this.menuSuperior.Size = new System.Drawing.Size(998, 28);
@@ -302,15 +321,49 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // imageList1
+            // lblUsuario
             // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "venta rapida2.png");
-            this.imageList1.Images.SetKeyName(1, "productos.png");
-            this.imageList1.Images.SetKeyName(2, "clientes2.png");
-            this.imageList1.Images.SetKeyName(3, "inventario.png");
-            this.imageList1.Images.SetKeyName(4, "corte de caja.png");
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.Location = new System.Drawing.Point(735, 7);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(59, 23);
+            this.lblUsuario.TabIndex = 3;
+            this.lblUsuario.Text = "label1";
+            // 
+            // btnUsuarios
+            // 
+            this.btnUsuarios.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsuarios.ImageIndex = 5;
+            this.btnUsuarios.ImageList = this.imageList1;
+            this.btnUsuarios.Location = new System.Drawing.Point(12, 412);
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.Size = new System.Drawing.Size(215, 64);
+            this.btnUsuarios.TabIndex = 6;
+            this.btnUsuarios.Text = "Usuarios";
+            this.btnUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUsuarios.UseVisualStyleBackColor = true;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrar.ImageIndex = 6;
+            this.btnCerrar.ImageList = this.imageList1;
+            this.btnCerrar.Location = new System.Drawing.Point(12, 492);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(215, 64);
+            this.btnCerrar.TabIndex = 7;
+            this.btnCerrar.Text = "Cerrar Sesion";
+            this.btnCerrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            // 
+            // cambiarClaveToolStripMenuItem
+            // 
+            this.cambiarClaveToolStripMenuItem.Name = "cambiarClaveToolStripMenuItem";
+            this.cambiarClaveToolStripMenuItem.Size = new System.Drawing.Size(119, 24);
+            this.cambiarClaveToolStripMenuItem.Text = "Cambiar Clave";
+            this.cambiarClaveToolStripMenuItem.Click += new System.EventHandler(this.cambiarClaveToolStripMenuItem_Click);
             // 
             // FrmMenuPrincipal
             // 
@@ -318,13 +371,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(998, 725);
+            this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuSuperior);
             this.MainMenuStrip = this.menuSuperior;
             this.MaximizeBox = false;
             this.Name = "FrmMenuPrincipal";
-            this.Text = "El buen sabor";
+            this.Text = "Menu Principal";
             this.Load += new System.EventHandler(this.Sabor_Load);
             this.panel1.ResumeLayout(false);
             this.menuSuperior.ResumeLayout(false);
@@ -345,7 +399,7 @@
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnVentasRapidas;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnCorteCaja;
         private System.Windows.Forms.Button btnIventario;
         private System.Windows.Forms.Button btnClientes;
@@ -364,6 +418,10 @@
         private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registroClientesToolStripMenuItem;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Button btnUsuarios;
+        private System.Windows.Forms.ToolStripMenuItem cambiarClaveToolStripMenuItem;
     }
 }
 

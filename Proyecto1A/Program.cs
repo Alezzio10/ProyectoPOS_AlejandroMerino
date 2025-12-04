@@ -18,10 +18,11 @@ namespace Proyecto1A
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new FrmProductos());
-            Application.Run(new FrmMenuPrincipal());
-           // Application.Run(new FrmClientes2());
-            Application.Run(new FrmCategoria());
-            Application.Run(new FrmRegistrarVenta());
+            //Application.Run(new FrmMenuPrincipal());
+            // Application.Run(new FrmClientes2());
+            //Application.Run(new FrmCategoria());
+            //Application.Run(new FrmRegistrarVenta());
+            Application.Run(new FrmLogin());
         }
     }
 }
